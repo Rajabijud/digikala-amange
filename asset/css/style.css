@@ -1,0 +1,234 @@
+@font-face {
+    font-family:"myfont";
+    src: url('fonts/Vazir-FD.eot');
+    src: url('fonts/Vazir-FD.eot?#iefix') format('FontName-opentype'),
+         url('fonts/Vazir-FD.woff') format('woff'),
+         url('fonts/Vazir-FD.woff2') format('woff2'),
+         url('fonts/Vazir-Thin-FD.ttf') format('truetype');
+         font-weight: 400;
+  }
+  @font-face {
+    font-family:"myfont";
+    src: url('fonts/Vazir-Thin-FD.eot');
+    src: url('fonts/Vazir-Thin-FD.eot?#iefix') format('FontName-opentype'),
+         url('fonts/Vazir-Thin-FD.woff') format('woff'),
+         url('fonts/Vazir-Thin-FD.woff2') format('woff2'),
+         url('fonts/Vazir-Thin-FD.ttf') format('truetype');
+         font-weight:100;
+  }
+  @font-face {
+    font-family:"myfont";
+    src: url('fonts/Vazir-Light-FD.eot');
+    src: url('fonts/Vazir-Light-FD.eot?#iefix') format('FontName-opentype'),
+         url('fonts/Vazir-Light-FD.woff') format('woff'),
+         url('fonts/Vazir-Light-FD.woff2') format('woff2'),
+         url('fonts/Vazir-Light-FD.ttf') format('truetype');
+         font-weight:200;
+  }
+  @font-face {
+    font-family:"myfont";
+    src: url('fonts/Vazir-Medium-FD.eot');
+    src: url('fonts/Vazir-Medium-FD.eot?#iefix') format('FontName-opentype'),
+         url('fonts/Vazir-Medium-FD.woff') format('woff'),
+         url('fonts/Vazir-Medium-FD.woff2') format('woff2'),
+         url('fonts/Vazir-Medium-FD.ttf') format('truetype');
+         font-weight:300;
+  }
+  @font-face {
+    font-family:"myfont";
+    src: url('fonts/Vazir-Bold-FD.eot');
+    src: url('fonts/Vazir-Bold-FD.eot?#iefix') format('FontName-opentype'),
+         url('fonts/Vazir-Bold-FD.woff') format('woff'),
+         url('fonts/Vazir-Bold-FD.woff2') format('woff2'),
+         url('fonts/Vazir-Bold-FD.ttf') format('truetype');
+         font-weight:600;
+  }
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    direction: rtl;
+    font-family: "myfont";
+    background-color: #fff;
+    
+  
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #000;
+
+}
+a:visited{
+    text-decoration: none;
+    color: #000;
+}
+span{
+    font-size: 11px;
+}
+.w100{
+    width: 100%;
+}
+.p-5{
+    padding: 5px;
+}
+.br-10{
+    border-radius: 10px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+}
+.header-right{
+width: 70%;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+.header-search {
+    margin-right: 20px;
+    background-color: #f1f1f1;
+    padding: 9px 15px;
+    padding-right: 30px;
+    border-radius: 10px;
+    outline: none;
+    min-width: 600px;
+    font-family: "myfont";
+}
+.search-icon{
+    width: 24px;
+    position: absolute;
+    right: 25px;
+    top: 5px;
+}
+.header-right form{
+    position: relative;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-left img{
+    margin-right: 5px;
+}
+.profile {
+    padding: 8px 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.profile img{
+    margin-left: 10px;
+}
+.header-location{
+    margin-top: 15px;
+}
+.header-left-navlist {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.header-left-navlist li{
+    padding: 10px 5px;
+}
+.container{
+    width: 100%;
+    max-width: 1366px;
+    display: block;
+    margin: 0px auto;
+}
+/****slider***/
+.slider{
+    display: flex;
+    flex-direction: row;
+   /* align-items: center;*/
+    justify-content: space-between;
+}
+.slider-right{
+    width: 70%;
+    padding: 0px 5px;
+    position: relative;
+}
+button.slider-next {
+    position: absolute;
+    top: calc(50% - 16px);
+    right: 13px;
+    font-size: 28px;
+    color: #fff;
+    border: 0;
+    background-color: initial;
+}
+button.slider-next:hover{
+    right: 9px;
+    transition: 0.5s;
+    
+}
+button.slider-pre {
+    position: absolute;
+    top: calc(50% - 16px);
+    left: 13px;
+    font-size: 28px;
+    color: #fff;
+    border: 0;
+    background-color: initial;
+}
+button.slider-pre:hover{
+    left: 10px;
+    transition: 0.5s;
+}
+
+.slider-left{
+    width: 30%;
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.slider-right img,.slider-left img {
+    width: 100%;
+    border-radius: 10px;
+}
+/*boot strap grid sysytem*/
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-12{
+    width: 100%;
+}
+.col-10{
+  width: 83.33333333333333%;  
+}
+.col-6{
+    width: 50%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33333333333333%;
+}
+.col-2{
+   width: 16.66666666666667%; 
+}
+.col-1{
+    width: 8.333333333333333%;
+}
+/*************section offer*****/
+.offer{
+    background-color: #6bb927;
+    padding: 32px 0px;
+
+}
